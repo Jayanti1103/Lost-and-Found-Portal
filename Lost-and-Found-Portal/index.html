@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home - Lost and Found</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Portal Logo" height="40">
+                Lost & Found
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report.html">Report Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claim.html">Claim Missing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item ml-lg-3" id="nav-login">
+                        <a class="btn btn-outline-light btn-sm" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item ml-2" id="nav-register">
+                        <a class="btn btn-primary btn-sm" href="register.html">Register</a>
+                    </li>
+            
+                    <li class="nav-item ml-lg-3" id="nav-my-reports" style="display: none;">
+                        <a class="btn btn-primary btn-sm" href="my_reports.html">My Reports</a>
+                    </li>
+                    <li class="nav-item ml-2" id="nav-logout" style="display: none;">
+                        <a class="btn btn-outline-light btn-sm" href="#">Logout</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-3">Find What You've Lost</h1>
+            <p class="lead">The central portal for reporting and claiming lost & found items.</p>
+            <div class="hero-buttons mt-4">
+                <a href="report.html" class="btn btn-primary btn-lg m-2">
+                    <i class="fas fa-bullhorn"></i> Report an Item
+                </a>
+                <a href="claim.html" class="btn btn-outline-light btn-lg m-2">
+                    <i class="fas fa-search"></i> Claim an Item
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container text-center my-5 py-5">
+        <h2 class="mb-5">How It Works</h2>
+        <div class="row">
+            <div class="col-md-4 scroll-animate">
+                <div class="card p-4 h-100 shadow-sm">
+                    <i class="fas fa-pencil-alt fa-3x text-primary mb-3"></i>
+                    <h4>1. Report It</h4>
+                    <p>Fill out a simple form with details about the item you lost or found. Add photos for better identification.</p>
+                </div>
+            </div>
+            <div class="col-md-4 scroll-animate">
+                <div class="card p-4 h-100 shadow-sm">
+                    <i class="fas fa-bell fa-3x text-primary mb-3"></i>
+                    <h4>2. Get Notified</h4>
+                    <p>Our system works to find a match. You'll be alerted when an item matching your description is reported.</p>
+                </div>
+            </div>
+            <div class="col-md-4 scroll-animate">
+                <div class="card p-4 h-100 shadow-sm">
+                    <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                    <h4>3. Reclaim It</h4>
+                    <p>Connect with the finder (or loser) and arrange a secure pickup at the designated admin office.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer bg-dark text-white text-center p-4 mt-5">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Lost & Found Portal. All Rights Reserved.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white">Privacy Policy</a> | 
+            <a href="#" class="text-white">Terms of Use</a> |
+            <a href="admin-login.html" class="text-white-50">Admin Portal</a>
+        </p>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

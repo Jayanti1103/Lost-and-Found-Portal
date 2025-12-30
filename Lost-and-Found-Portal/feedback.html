@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Feedback - Lost and Found</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Portal Logo" height="40">
+                Lost & Found
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report.html">Report Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claim.html">Claim Missing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item ml-lg-3" id="nav-login">
+                        <a class="btn btn-outline-light btn-sm" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item ml-2" id="nav-register">
+                        <a class="btn btn-primary btn-sm" href="register.html">Register</a>
+                    </li>
+            
+                    <li class="nav-item ml-lg-3" id="nav-my-reports" style="display: none;">
+                        <a class="btn btn-primary btn-sm" href="my_reports.html">My Reports</a>
+                    </li>
+                    <li class="nav-item ml-2" id="nav-logout" style="display: none;">
+                        <a class="btn btn-outline-light btn-sm" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="form-container-wrapper">
+    <div class="container">
+
+        <h1 class="display-4 text-center mb-3">
+            <i class="fas fa-star"></i> Give Us Your Feedback
+        </h1>
+        <p class="lead text-center mb-4">
+            We value your opinion. Let us know how we can improve.
+        </p>
+
+        <div class="form-card">
+            <form id="feedbackForm">
+        
+                <div id="feedback-success" class="alert alert-success" style="display: none;"></div>
+                <div id="feedback-error" class="alert alert-danger" style="display: none;"></div>
+
+                <div class="form-group">
+                    <label for="feedbackName"><i class="fas fa-user"></i> Your Name (Optional)</label>
+                    <input type="text" class="form-control" id="feedbackName" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedbackEmail"><i class="fas fa-envelope"></i> Your Email (Optional)</label>
+                    <input type="email" class="form-control" id="feedbackEmail" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-star-half-alt"></i> Your Rating</label>
+                    <select class="form-control" id="feedbackRating" name="rating" required>
+                        <option value="" disabled selected>-- Select a Rating --</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedbackMessage"><i class="fas fa-comment-dots"></i> Your Message</label>
+                    <textarea class="form-control" id="feedbackMessage" name="message" rows="4" placeholder="What did you like? What can we do better?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Submit Feedback
+                </button>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+    <footer class="footer bg-dark text-white text-center p-4 mt-5">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Lost & Found Portal. All Rights Reserved.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white">Privacy Policy</a> | 
+            <a href="#" class="text-white">Terms of Use</a> |
+            <a href="admin-login.html" class="text-white-50">Admin Portal</a>
+        </p>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
